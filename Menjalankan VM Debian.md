@@ -39,6 +39,9 @@ OS menyediakan antarmuka antara aplikasi (termasuk program yang ditulis dalam ba
 
 ![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/8ab13ec7-3a8b-47e6-80b7-072dd9407881)
 
+menginstal make dengan cara menginputkan apt upgrade
+kemudian apt install make
+
 
 -$ make clean
 
