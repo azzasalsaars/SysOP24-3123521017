@@ -91,4 +91,12 @@ flops
 flops64 $(nproc)
 
    ![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/1530d68b-00d9-486b-8d23-24aabda22931)
- 
+
+
+#### Perbandingan hasil iops dan flops
+
+![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/ce286884-d5e8-4f3b-b349-7b0a0f257166)
+
+#### Analisis
+
+
