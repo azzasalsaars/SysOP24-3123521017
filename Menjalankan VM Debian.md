@@ -4,35 +4,32 @@
 
 #### Jadi tahap-tahap dalam siklus CPU sbb:
 
-    Fetch (Pengambilan):
-        CPU mengambil instruksi dari memori utama (RAM) berdasarkan alamat yang ditunjukkan oleh counter program (Program Counter).
-        Instruksi ini kemudian disimpan di dalam register instruksi 
+Fetch (Pengambilan):
+ 
+CPU mengambil instruksi dari memori utama (RAM) berdasarkan alamat yang ditunjukkan oleh counter program (Program Counter).
+Instruksi ini kemudian disimpan di dalam register instruksi 
         
-    Decode (Dekode):
-        CPU menerjemahkan instruksi yang telah diambil dari memori.
-        Instruksi ini dibagi menjadi bagian-bagian yang dapat dimengerti             flooleh CPU, seperti opcode dan operand.
+Decode (Dekode):
 
-    Execute (Eksekusi):
-        CPU menjalankan instruksi yang telah didekode.
-        Ini dapat melibatkan operasi aritmatika, logika, perpindahan data, atau instruksi kontrol untuk mengubah aliran eksekusi.
+CPU menerjemahkan instruksi yang telah diambil dari memori.Instruksi ini dibagi menjadi bagian-bagian yang dapat dimengerti flooleh CPU, seperti opcode dan operand.
+
+Execute (Eksekusi):
+        
+CPU menjalankan instruksi yang telah didekode.Ini dapat melibatkan operasi aritmatika, logika, perpindahan data, atau instruksi kontrol untuk mengubah aliran eksekusi.
 
         
 #### Peran Bahasa pemrograman adalah:
-    Bahasa pemrograman adalah alat untuk mengekspresikan logika dan instruksi yang diinginkan untuk dilakukan oleh program.
-    Bahasa pemrograman menyediakan struktur dan sintaks yang dapat dimengerti oleh manusia untuk menulis kode program.
-    Contoh bahasa pemrograman termasuk C, C++, Java, Python, dll.
+
+Bahasa pemrograman adalah alat untuk mengekspresikan logika dan instruksi yang diinginkan untuk dilakukan oleh program.Bahasa pemrograman menyediakan struktur dan sintaks yang dapat dimengerti oleh manusia untuk menulis kode program.Contoh bahasa pemrograman termasuk C, C++, Java, Python, dll.
 
 #### Peran Compiler adalah sbb:
 
-    Compiler adalah perangkat lunak yang menerjemahkan kode program yang ditulis dalam bahasa pemrograman tingkat tinggi menjadi bahasa mesin yang dapat dimengerti oleh komputer.
-    Compiler memproses kode program, memeriksanya untuk kesalahan sintaksis, dan menghasilkan output dalam bentuk file biner atau kode objek.
-    Output ini kemudian dapat dieksekusi oleh CPU.
+Compiler adalah perangkat lunak yang menerjemahkan kode program yang ditulis dalam bahasa pemrograman tingkat tinggi menjadi bahasa mesin yang dapat dimengerti oleh komputer.Compiler memproses kode program,memeriksanya untuk kesalahan sintaksis, dan menghasilkan output dalam bentuk file biner atau kode objek.Output ini kemudian dapat dieksekusi oleh CPU.
     
 #### Peran dari sitem operasi adalah :
 
-    Sistem operasi (OS) bertanggung jawab atas manajemen sumber daya komputer, termasuk CPU, memori, perangkat masukan/keluaran, dan jaringan.
-    OS menyediakan antarmuka antara aplikasi (termasuk program yang ditulis dalam bahasa pemrograman) dan perangkat keras komputer.
-    Saat program dieksekusi, OS memfasilitasi akses ke sumber daya sistem yang diperlukan, mengelola proses, dan menyediakan lingkungan yang aman dan stabil bagi eksekusi program.
+Sistem operasi (OS) bertanggung jawab atas manajemen sumber daya komputer, termasuk CPU, memori, perangkat masukan/keluaran, dan jaringan.
+OS menyediakan antarmuka antara aplikasi (termasuk program yang ditulis dalam bahasa pemrograman) dan perangkat keras komputer.Saat program dieksekusi, OS memfasilitasi akses ke sumber daya sistem yang diperlukan, mengelola proses, dan menyediakan lingkungan yang aman dan stabil bagi eksekusi program.
 
 2.Membaca dan memahami
 
@@ -54,10 +51,12 @@
 
 
 -$ sudo make uninstal
+
 ![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/9e77d84a-8064-41b3-8045-cf5d6d752955)
 
 
 -$ iops64 $(nproc) 1
+
  $ flops64 $(nproc)
 
 ![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/4e435d63-aa98-438a-9183-a173d790f93a)
@@ -66,15 +65,18 @@
 
 -$ iops64 $(nproc) 2
 
+flops64 $(nproc)
+
 ![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/ca12c855-ee08-4b57-ba49-ffff259a9d2a)
 
 
 ![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/f439cccc-ab93-44f1-9866-d9230e3bd5a4)
 
-- iops64 $(nproc)3
-  flops64 $(nproc)
+-$ iops64 $(nproc)3
+
+flops64 $(nproc)
   
-  ![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/6e189ddc-23b4-4b66-89fc-c5cbc0a5214e)
+![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/6e189ddc-23b4-4b66-89fc-c5cbc0a5214e)
 
 
 
@@ -82,16 +84,18 @@
 
 
   
--iops64 $(nproc)4
+-$ iops64 $(nproc)4
+
 flops64 $(nproc)
 
 ![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/a028543e-8ca8-444a-bc2c-9d195e746ef4)
 
 
--iops64 $(nproc)5
+-$ iops64 $(nproc)5
+
 flops64 $(nproc)
 
-   ![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/1530d68b-00d9-486b-8d23-24aabda22931)
+![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/1530d68b-00d9-486b-8d23-24aabda22931)
 
 
 #### Perbandingan hasil iops dan flops
@@ -99,5 +103,13 @@ flops64 $(nproc)
 ![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/ce286884-d5e8-4f3b-b349-7b0a0f257166)
 
 #### Analisis
+
+CPU : Intel Core i3-1005G1CPU@ 1.20GHz
+
+1.iops64 melakukan benchmarking untuk operasi bilangan bulat 64-bit perdetik,total iops dihitung sebagai jumlah operasi dari semua thread.Iops yang di laporkan pada awalnya adalah 5606999684.
+
+2.Flops64 melakukan benchmarking untuk operasi floating point 64-bit per detik,total flops dihitung sebagai jumlah perasi dari semua thread. FLOPS yang di laporkan pada awalnya adalah 5769843664.
+
+ini menunjukkan bahwa sistem Debian memiliki kemampuan yang cukup besar dalam melakukan operasi bilangan bulat dan floating point pada level 64-bit, dengan throughput yang tinggi pada jumlah thread atau inti prosesor yang digunakan. Hal ini menunjukkan kinerja yang baik dari CPU pada sistem tersebut.
 
 
