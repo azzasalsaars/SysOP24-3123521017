@@ -58,7 +58,7 @@
 
 
 -$ iops64 $(nproc) 1
-$ flops64 $(nproc)
+ $ flops64 $(nproc)
 
 ![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/4e435d63-aa98-438a-9183-a173d790f93a)
 
@@ -72,7 +72,8 @@ $ flops64 $(nproc)
 ![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/f439cccc-ab93-44f1-9866-d9230e3bd5a4)
 
 - iops64 $(nproc)3
-  flops
+  flops64 $(nproc)
+  
   ![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/6e189ddc-23b4-4b66-89fc-c5cbc0a5214e)
 
 
@@ -82,7 +83,7 @@ $ flops64 $(nproc)
 
   
 -iops64 $(nproc)4
-flops
+flops64 $(nproc)
 
 ![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/a028543e-8ca8-444a-bc2c-9d195e746ef4)
 
