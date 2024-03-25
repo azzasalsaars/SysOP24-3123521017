@@ -115,4 +115,72 @@ CPU : Intel Core i3-1005G1CPU@ 1.20GHz
 
 ini menunjukkan bahwa sistem Debian memiliki kemampuan yang cukup besar dalam melakukan operasi bilangan bulat dan floating point pada level 64-bit, dengan throughput yang tinggi pada jumlah thread atau inti prosesor yang digunakan. Hal ini menunjukkan kinerja yang baik dari CPU pada sistem tersebut.
 
+## Proses Bagaimana CPU berjalan 
+
+Pada setiap detik jam, CPU akan melakukan salah satu dari tiga hal, yaitu mengambil intruksi dari alamt memori,memcahkan kode instruksi tersebut,dan menjalankan instruksi secara berulang-ulang dalam satu lingkaran sehingga akan dihitung dengan grafik :
+
+![CPU kosong drawio](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/aacd58d9-5200-432b-92cb-8f75e3cf7c98)
+
+1.Jam perhitungan proses disetel ke 0 dalam proses Fetch 
+
+![CPU 1 drawio](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/b83a6e08-a69d-45af-a820-83b1bb9d72f9)
+
+sehingga dalam proses tersebut perhitungan CPU mengambil intruksi 0 di memori dan memasukkan ke dalam register instruksi.
+
+2.Proses Dekode
+
+![CPU 2 drawio](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/8d4a5094-78d7-48d1-924c-620d4700bbc1)
+
+CPU menerjemahkan instruksi bagian pertama kemudian instruksinya di muat dengan alamatnya adalah 6,jadi nilai dalam alamat 6 akan di muat dalam akumulator.
+
+3.Proses Execute
+
+![CPU 3 drawio](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/029f8456-6289-4e4c-99d8-b4060066a9b2)
+
+Setelah dijalankan akan menuju proses Execute menggunakan nilai di alamat 6,Kemudian dalam akumulator nilainya adalah 1.
+
+### Proses selanjutnya
+
+Fetch ke-2
+
+![CPU 4 drawio](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/cc8ee2ac-ff99-4a7a-a7c4-d522b5bfa994)
+
+program counter bertambah dan CPU mengambil insruksi berikutnya di bit memori.
+
+Decode ke-2
+
+![CPU 5 drawio](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/9da557f9-9a2d-427e-a616-fee0276d2ce3)
+
+CPU menerjemahkan instruksi,lalu menambahkan 1 dan alamatnya adalah 7,jadi menambahkan alamat 7 ke dalam apa yang sudah ada di akumulator. Jalankan lagi CPU
+
+Execute ke-2
+
+![CPU 6 drawio](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/7676fbe1-888b-4f9b-ac54-a12c11110673)
+
+Mengeksekusi intruksi dengan menambahkan nilai kel alamta 7 maka nilainya dalam accumulator 1+1 menjadi 2.
+
+Fetch ke-3
+
+![CPU 7 drawio](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/1e89fa81-f924-4ee6-95ba-976bb636309e)
+
+Mengambil dari lokasi memori berikutnya yaitu nomor 2.
+
+Decode ke-3
+
+![CPU 8 drawio](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/3dde241a-8082-4b02-82bf-c580c4162109)
+
+mendecode untuk menyimpan nilai di akumulator ke dalam RAM di alamat 6,Jalankan
+
+Execute ke-3
+
+![CPU 9 drawio](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/ad09c6ea-61e7-4dd8-ae88-5f515eeeb0e4)
+
+Alamat 6 sekarang memiliki nilai 2 di dalamnya.
+
+Fetch ke-4
+
+![CPU 10 drawio](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/74b6b8cc-f1e5-4a28-817b-b5b7fcd8090b)
+
+Mengambil instrukasi baru dengan lompatan alamat dan mengambil 1 dalam dekode instruksi
+
 
