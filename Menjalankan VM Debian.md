@@ -183,4 +183,18 @@ Fetch ke-4
 
 Mengambil instrukasi baru dengan lompatan alamat dan mengambil 1 dalam dekode instruksi
 
+Decode ke-5
+
+![CPU 11 drawio](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/60d833e9-625f-4dac-a5cd-943c417bf804)
+
+Lompat ke alamat nomor 1 
+
+Execute ke -4
+
+![CPU 12 drawio](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/dc88c8ee-adc1-4471-82c8-571928cfe67f)
+
+Penghitungan kembali ke 1.
+
+Kemampuan untuk melompat, mengulang, dan membuat instruksi secara rekursif adalah salah satu dasar dalam ilmu komputer.
+
 
