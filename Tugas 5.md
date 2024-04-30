@@ -18,3 +18,10 @@ install gcc g++
 
 ![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/36974588-d83d-491d-a112-f1b2e44f6d0b)
 
+fork 01
+fork 02
+fork 03
+
+orphan
+
+zombie
