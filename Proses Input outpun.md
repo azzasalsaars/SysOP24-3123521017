@@ -191,3 +191,148 @@ Output  hasil
  ![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/e79d4169-99cc-41e3-a238-49833f206864)
 
 Perintah cat < output > out dan cat out merupakan perintah yang digbumngkan untuk membelokkan standard output dari file output menjadi standard input untuk file out sehingga hasil standard output‐nya sama. Selanjutnya, perintah cat < output >> out digunakan untuk membelokkan standard output dari file output menjadi penambahan output ke file yang bernama out. Sehingga, output dari file out akan ditambahkan dengan output dari file output. Selanjutnya perintah cat output >> out, cat out, cat < output > output, cat output, cat < out >> out tidak ada output karena menggunakan nama file yang sama.
+
+Percobaan  3 : melihat siapa yang sedang aktif
+1.	Operator pipa (|) digunakan untuk membuat eksekusi proses dengan melewati data langsung ke data lainnya.
+$ who  $ who | sort  $ who | sort –r  $ who > tmp  $ sort tmp $ rm tmp
+Output hasil
+
+![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/97fa9835-b969-4cf0-931f-ad2cb6e2e037)
+
+ 
+- Perintah who digunakan untuk melihat siapa saja yang aktif.Perintah who > tmp  $untuk membelokkan output who ke file tmp. Perintah sort tmp mengurtutan baris teks dalam file tmp,dan perintah  rm tmp untuk menghapus file tmp
+
+
+$ ls –l /etc | more
+Output hasil
+
+![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/eae45bf8-9c8a-4866-a889-7da4843b7ea7)
+
+- Selanjutnya, untuk perintah ls -l etc digunakan untuk melihat isi dari direktori (folder) /etc dan akan di pipeline dengan tambahan perintah more dengan tujuan mempermudah untuk menggabungkan dua perintah sekaligus.
+
+$ ls –l /etc | sort | more
+Output hasil
+
+ ![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/1c74790e-b629-4b2e-89b2-762118428eda)
+
+-Perintah ls –l /etc | sort | more hamir sama demngan sbelumya tetapi terdapat perintah “sort” untuk mengurutkan tampilan dari siapa saja yang aktif.
+
+Percobaan 4 : Filter
+2.	Pipa juga digunakan untuk mengkombinasikan utilitas sistem untuk membentuk fungsi yang lebih kompleks
+$ w –h | grep <user>
+Output hasil
+
+ ![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/167d2e27-8457-43de-b67a-51bf4614d4e4)
+
+
+$ grep <user> /etc/passwd   $ ls /etc | wc   $ ls /etc | wc –l
+Output hasil
+ 
+![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/61a58ed6-16a8-4b45-9f5e-0b5eb1ac29b7)
+
+
+
+$ cat > kelas1.txt Badu Zulkifli Yudi Ade
+[Ctrl-d] $ cat > kelas2.txt
+Budi
+Gama
+Asep
+Muchlis
+[Ctrl-d]
+
+Output hasil
+
+ ![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/80e9a8a2-ff01-44b2-8e00-70a0a7ca224c)
+
+-Perintah cat > kelas1.txt umtuk mengisi file kelas1.txt yaitu Badu
+Zulkifli Yulizir Yudi Ade dan ntuk berhenti [Ctrl-d] begitu juga dengan perintah cat > kelas2.txt.
+
+$ cat kelas1.txt kelas2.txt | sort
+$ cat kelas1.txt kelas2.txt > kelas.txt
+$ cat kelas.txt | sort | uniq
+
+Output hasil
+
+ ![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/5f5a18ca-0ed3-4ca4-bf3e-bdec360d5ba0)
+
+	
+-Perintah cat kelas1.txt kelas2.txt | sort di gunakan untuk menampilkan isi file kelas1.txt kelas2.txt dengan mengurutkan sesuai abjad yang terdahulu. Kemudian perintah cat kelas1.txt kelas2.txt > kelas.txt untuk membelokkan output ke file kelas.txt ,kemudin menampilkan file kelas.txt dengan  cat kelas.txt | sort | uniq yang mana uniq digunakan untuk menghilangkan baris-baris berurutan yang mengalami duplikasi,biasanya digabungkan dalam pipeline dengan sort.
+
+## LATIHAN
+
+1. Lihat daftar secara lengkap pada direktori aktif, belokkan tampilan standard output ke file baru.
+-	Untuk melihat daftar direktori aktif, gunakan perintah $ ls, sedangkan untuk
+membelokkan tampilan standard output ke file baru, gunakan ‘>’
+
+![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/4019b52c-ad16-4d06-90ba-834938f1ee89)
+
+2. Lihat daftar secara lengkap pada direktori /etc/passwd, belokkan tampilan
+standard output ke file baru tanpa menghapus file baru sebelumnya.
+- Untuk melihat daftar lengkap dari direktori /etc/passwd, gunakan perntah $ ls, sedangkan
+untuk membelokkan tampilan standard output ke file baru tanpa menghapus file baru
+sebelumnya, gunakan ‘>>’
+
+ ![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/133199cf-23c4-4f39-a653-04ccc759ff88)
+
+3.	Urutkan file baru dengan cara membelokkan standard input.
+- Untuk mengurutkan file, gunakan perintah $ sort, sedangkan untuk membelokkan
+standard input, gunakan ‘<’
+
+![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/a17bcd78-f0f2-487c-a9fb-2f75d110ff42)
+ 
+4. Urutkan file baru dengan cara membelokkan standard input dan standard output ke file baru.urut.
+- Untuk mengurutkan file, gunakan perintah $ sort, sedangkan untuk membelokkan
+standard input, gunakan ‘<’, sedangkan untuk membelokkan standard output ke file,
+gunakan ‘>’. Pembelokan standart input dan standart output dapat dikombinasikan
+asalkan tidak boleh menggunakan nama file yang sama sebagai standart input dan output
+ 
+![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/1c335f02-d19c-4ccc-9ce9-af84daf8f0b6)
+
+5. Buatlah direktori latihan2 sebanyak 2 kali dan belokkan standard error ke file
+rmdirerror.txt.
+- Gunakan perintah $ mkdir untuk membuat direktori baru. Saat membuat direktori yang
+sama sebanyak dua kali, akan muncul pesan error. Pesan error itu kemudian dibelokkan
+ke file dengan menggunakan ‘2>’
+ 
+6. Urutkan kalimat berikut :
+Jakarta
+Bandung
+Surabaya
+Padang
+Palembang
+Lampung
+Dengan menggunakan notasi here document (<@@@ …@@@)
+- Pertama, buat notasi here document yang akan dibelokkan ke sebuah file kemudian isi
+document tersebut. Setelah diisi dan diakhiri, isi dokumen akan tersimpan ke file yang
+dibelokkan. File tersebut kemudian diurutkan menggunakan perintah $ sort
+ 
+![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/ac7b90fe-30f2-4652-9b6c-c12b639b39f6)
+
+7. Hitung jumlah baris, kata dan karakter dari file baru.urut dengan menggunakan
+filter dan tambahkan data tersebut ke file baru.
+- Untuk mendapatkan jumlah baris, kata, dan karakter (secara berurutan) dari sebuah file,
+gunakan perintah wc yang dipipakan dengan perintah cat. Hasilnya kemudian bisa
+ditambahkan ke file menggunakan ‘>>’
+
+ ![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/ebfd712b-3d96-488e-b1d1-98428e994f2f)
+
+8. Gunakan perintah di bawah ini dan perhatikan hasilnya.
+$ cat > hello.txt
+dog cat
+cat duck
+dog chicken
+chicken duck
+chicken cat
+dog duck
+[Ctrl-d]
+$ cat hello.txt | sort | uniq
+$ cat hello.txt | grep “dog” | grep –v “cat”
+-	Perintah Uniq digunakan untuk menghilangkan baris-baris berurutan yang mengalami duplikasi, digunakan untuk menyaring masukannya dan menampilkan baris-baris yang hanya mengandung pola yang ditentukan. Pola ini disebut regular expression. Salah satu regular expression dari grep adalah -v (invert0match), yang akan menampilkan baris yang
+TIDAK mengandung pola yang ditentukan.
+ 
+![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/ddcefe0d-0be1-4a9f-8b04-3b7ef8149d1a)
+
+
+
+
+
