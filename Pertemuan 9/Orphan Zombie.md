@@ -1,4 +1,4 @@
-## ORPHAN ZOMBIE
+## PROSES ORPHAN ZOMBIE
 
 ### Orphan
 ![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/b4f688bb-6557-44cb-9795-f606f842e858)
