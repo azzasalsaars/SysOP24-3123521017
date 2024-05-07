@@ -25,6 +25,3 @@ fork 03
 
 
 
-orphan
-
-zombie
