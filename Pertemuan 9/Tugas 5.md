@@ -9,8 +9,14 @@
 ![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/36974588-d83d-491d-a112-f1b2e44f6d0b)
 
 - fork 01
+  ![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/4c5d410e-1ea4-40f0-8c18-c1529cc27a25)
+
 Menampilkan Hasil PID,PPID,dan UID.
+
 fork 02
+![image](https://github.com/azzasalsaars/SysOP24-3123521017/assets/160559457/6e924f09-05d1-4392-bdd8-3439e7bb1dcb)
+
+
 fork 03
 
 orphan
