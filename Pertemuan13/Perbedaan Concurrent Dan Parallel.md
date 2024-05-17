@@ -15,5 +15,4 @@ Meja 1 dan Meja 2 bisa mendapatkan pesanan mereka lebih cepat karena tidak harus
 ### Penjelasan
 **Cocurrent**(Bersamaan),Berarti menjalankan beberapa tugas hampir bersamaan dengan cara bergantian.Dalam proses ini sering melibatkan
 satu CPU yang berganti-ganti antara tugas-tugas dengansangat cepat sehingga tampak seperti dilakukan bersama.
-Sedangkan **Parallel** menjlankan nbebrapa tugas secara benar-benar bersamaan .Dalam komputasi, ini memerlukan bnyak CPU(ata core)di mana setipa CPU 
-menjalankan tugas yang berbeda pada waktu yang sama.
+Sedangkan **Parallel** menjlankan nbebrapa tugas secara benar-benar bersamaan .Dalam komputasi, ini memerlukan bnyak CPU(ata core)dimana setipa CPU menjalankan tugas yang berbeda pada waktu yang sama.
